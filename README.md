@@ -5,7 +5,7 @@ The Security Assistant is an Ollama based large language model (LLM) retrieval-a
 ![sample](sample.png)
 
 # Why
-Many organizations are sensitive to provide internal documentation to web based LLMs, such as ChatGPT, because of legal and privacy risks.  Therefore, a solution is needed to run a high quality on-premise LLM+RAG that does not rely on a third party to process data.  I was inspired to create an LLM that could use existing support documentation to answer security questions customers and/or auditors might have.  While the configured prompt is tailored to answering security questions, this project's prompts and files could be easily adjusted to be used for any LLM + RAG purpose.
+Many organizations are hesitant to provide internal documentation to web based LLMs, such as ChatGPT, because of legal and privacy risks. Therefore, a solution is needed to run a high quality on-premise LLM+RAG that does not rely on a third party to process data. I was inspired to create an LLM that could use existing support documentation to answer security questions customers and/or auditors might have. While the configured prompt is tailored to answering security questions, this project's prompts and files could be easily adjusted to be used for any LLM + RAG purpose.
 
 # How it works
 Langchain unstructured document parsers iterate through each document within the `files` folder, then chunks the content before inserting it into a local vector database using the `nomic-embed-text` model.
